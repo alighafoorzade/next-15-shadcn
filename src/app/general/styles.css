@@ -1,0 +1,5 @@
+.general-custom {
+    --spacing: 8px;
+    --radius: 16px;
+    --card: rgba(255, 0, 0, 0.4);
+}
