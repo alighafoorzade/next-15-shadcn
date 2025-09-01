@@ -120,3 +120,12 @@
     @apply bg-background text-foreground;
   }
 }
+
+
+.btn {
+  min-width: fit-content;
+  min-height: 48px;
+  max-width: 120px;
+}
+
+

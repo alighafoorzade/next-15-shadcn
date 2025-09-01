@@ -3,16 +3,17 @@ import { Slot } from "@radix-ui/react-slot";
 import { cva, type VariantProps } from "class-variance-authority";
 import { cn } from "@/lib/utils";
 
-const buttonVariants = cva("text-white px-8 py-2 rounded-sm", {
+const buttonVariants = cva("btn", {
   variants: {
     intent: {
-      primary: "bg-red-600",
-      secondary: "bg-blue-600",
+      primary: "btn-primary",
+      secondary: "btn-secondary",
+      
     },
     size: {
-      small: "w-8",
-      medium: "w-16",
-      large: "w-32",
+      small: "sm",
+      medium: "md",
+      large: "lg",
     },
   },
   defaultVariants: {
@@ -23,12 +24,12 @@ const buttonVariants = cva("text-white px-8 py-2 rounded-sm", {
     {
       intent: "primary",
       size: "small",
-      class: "rounded-2xl",
+      class: "btn-primary-small",
     },
     {
       intent: "secondary",
       size: "large",
-      class: "rounded-4xl",
+      class: "btn-secondary-large",
     },
   ],
 });
